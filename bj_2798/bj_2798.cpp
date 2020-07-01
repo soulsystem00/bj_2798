@@ -33,15 +33,6 @@ int main()
                 combi[cnt] = card[i] + card[j] + card[k];
                 
                 cnt++;
-                for (int l = 0; l < cnt-1; l++)
-                {
-                    if (combi[l] == combi[cnt-1])
-                    {
-                        cnt--;
-                        break;
-                    }
-                        
-                }
             }
         }
     }
