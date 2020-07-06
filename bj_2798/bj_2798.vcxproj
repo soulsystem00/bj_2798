@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bj_1018.cpp" />
+    <ClCompile Include="bj_10872.cpp" />
     <ClCompile Include="bj_1436.cpp" />
     <ClCompile Include="bj_2231.cpp" />
     <ClCompile Include="bj_2750.cpp" />
