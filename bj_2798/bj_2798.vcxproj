@@ -157,6 +157,7 @@
     <ClCompile Include="bj_2798.cpp" />
     <ClCompile Include="bj_7568.cpp" />
     <ClCompile Include="구조체 테스트.cpp" />
+    <ClCompile Include="병합정렬_테스트.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
