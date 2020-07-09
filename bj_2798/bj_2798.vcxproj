@@ -155,6 +155,7 @@
     <ClCompile Include="bj_2750.cpp" />
     <ClCompile Include="bj_2751.cpp" />
     <ClCompile Include="bj_2798.cpp" />
+    <ClCompile Include="bj_41870.cpp" />
     <ClCompile Include="bj_7568.cpp" />
     <ClCompile Include="구조체 테스트.cpp" />
     <ClCompile Include="병합정렬_테스트.cpp" />

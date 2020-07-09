@@ -22,7 +22,10 @@ void check_heap(int tmp[], int index)
 	{
 		if (tmp[index] < tmp[index / 2])
 		{
-			swap(tmp[index], tmp[index / 2]);
+			//swap(tmp[index], tmp[index / 2]);
+			int tmp2 = tmp[index];
+			tmp[index] = tmp[index / 2];
+			tmp[index / 2] = tmp2;
 			check_heap(tmp, index / 2);
 		}
 	}
@@ -34,7 +37,11 @@ void check_heap2(int tmp[], int index,int size)
 	{
 		if (tmp[index] > tmp[index * 2])
 		{
-			swap(tmp[index], tmp[index * 2]);
+			//swap(tmp[index], tmp[index * 2]);
+			int tmp2 = tmp[index];
+			tmp[index] = tmp[index * 2];
+			tmp[index * 2] = tmp2;
+			
 			check_heap2(tmp, index * 2, size);
 		}
 	}
@@ -42,7 +49,10 @@ void check_heap2(int tmp[], int index,int size)
 	{
 		if (tmp[index] > tmp[index * 2 + 1])
 		{
-			swap(tmp[index], tmp[index * 2 + 1]);
+			//swap(tmp[index], tmp[index * 2 + 1]);
+			int tmp2 = tmp[index];
+			tmp[index] = tmp[index * 2+1];
+			tmp[index * 2+1] = tmp2;
 			check_heap2(tmp, index * 2 + 1, size);
 		}
 	}
@@ -55,29 +65,30 @@ void insert_heap(int arr[], int tmp[], int* tsize,int size)
 	*tsize = *tsize + 1;
 	if (*tsize < size)
 		insert_heap(arr, tmp, tsize, size);
-
-	
-
 }
 int main()
 {
 	
 	cin >> num;
 
-	int* arr = new int [(num+1)];
-
+	int* arr = (int*)malloc(sizeof(int) * num + 1);
+	int* tmp = (int*)malloc(sizeof(int) * num + 1);
+	int tsize = 1;
 	for (int i = 1; i <= num; i++)
 	{
 		cin >> arr[i];
 	}
 
-	int* tmp = new int[(num+1)];
-	int tsize = 1;
+	
 	// ÈüÁ¤·Ä
 	insert_heap(arr, tmp, &tsize, num+1);
+
 	delete_heap(arr, tmp, num + 1);
+
 	for (int i = 1; i < num + 1; i++)
 	{
 		printf("%d\n", arr[i]);
 	}
+
+
 }
