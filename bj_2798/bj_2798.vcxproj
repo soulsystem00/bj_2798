@@ -151,12 +151,16 @@
     <ClCompile Include="bj_1018.cpp" />
     <ClCompile Include="bj_10872.cpp" />
     <ClCompile Include="bj_1436.cpp" />
+    <ClCompile Include="bj_1934.cpp" />
     <ClCompile Include="bj_20493.cpp" />
     <ClCompile Include="bj_2231.cpp" />
+    <ClCompile Include="bj_2609.cpp" />
     <ClCompile Include="bj_2750.cpp" />
     <ClCompile Include="bj_2751.cpp" />
     <ClCompile Include="bj_2798.cpp" />
+    <ClCompile Include="bj_2981.cpp" />
     <ClCompile Include="bj_41870.cpp" />
+    <ClCompile Include="bj_5086.cpp" />
     <ClCompile Include="bj_7568.cpp" />
     <ClCompile Include="구조체 테스트.cpp" />
     <ClCompile Include="병합정렬_테스트.cpp" />
