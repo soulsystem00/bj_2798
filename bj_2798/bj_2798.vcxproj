@@ -148,15 +148,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bj_1003.cpp" />
     <ClCompile Include="bj_1009.cpp" />
     <ClCompile Include="bj_1010.cpp" />
     <ClCompile Include="bj_1018.cpp" />
     <ClCompile Include="bj_10773.cpp" />
     <ClCompile Include="bj_10828.cpp" />
     <ClCompile Include="bj_10872.cpp" />
+    <ClCompile Include="bj_11047.cpp" />
     <ClCompile Include="bj_11050.cpp" />
     <ClCompile Include="bj_11051.cpp" />
     <ClCompile Include="bj_1436.cpp" />
+    <ClCompile Include="bj_14719.cpp" />
     <ClCompile Include="bj_1934.cpp" />
     <ClCompile Include="bj_1676.cpp" />
     <ClCompile Include="bj_2004.cpp" />
