@@ -160,6 +160,7 @@
     <ClCompile Include="bj_11051.cpp" />
     <ClCompile Include="bj_1436.cpp" />
     <ClCompile Include="bj_14719.cpp" />
+    <ClCompile Include="bj_1904.cpp" />
     <ClCompile Include="bj_1934.cpp" />
     <ClCompile Include="bj_1676.cpp" />
     <ClCompile Include="bj_2004.cpp" />
@@ -175,11 +176,13 @@
     <ClCompile Include="bj_5086.cpp" />
     <ClCompile Include="bj_7568.cpp" />
     <ClCompile Include="bj_9184.cpp" />
+    <ClCompile Include="bj_9461.cpp" />
     <ClCompile Include="for_test.cpp" />
     <ClCompile Include="구조체 테스트.cpp" />
     <ClCompile Include="병합정렬_테스트.cpp" />
     <ClCompile Include="bj_2108.cpp" />
     <ClCompile Include="bj_1065.cpp" />
+    <ClCompile Include="소스.cpp" />
     <ClCompile Include="힙정렬_테스트.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

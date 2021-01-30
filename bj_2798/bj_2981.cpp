@@ -72,14 +72,23 @@
 //	{
 //		scanf("%d", &arr[i]);
 //	}
-//	int _size2 = _size-1;
+//	int _size2 = _size * (_size - 1) / 2;
 //	int* arr2 = new int[_size2];
 //	int k = 0;
-//	for (int i = 1; i < _size; i++)
+//	for (int i = 0; i < _size - 1; i++)
 //	{
-//		arr2[k] = abs(arr[i] - arr[i-1]);
-//		k++;
+//		for (int j = i + 1; j < _size; j++)
+//		{
+//			arr2[k] = abs(arr[i] - arr[j]);
+//			k++;
+//		}
 //	}
+//
+//	for (int i = 0; i < _size; i++)
+//	{
+//		cout << arr2[i] << " ";
+//	}
+//	cout << endl;
 //
 //	int tmp;
 //	if (_size2 > 1)
@@ -96,11 +105,11 @@
 //	}
 //
 //
-//	for (int i = 2; i <= tmp/2; i++)
+//	for (int i = 2; i <= tmp / 2; i++)
 //	{
 //		if (tmp % i == 0)
 //		{
-//			printf("%d ",i);
+//			printf("%d ", i);
 //		}
 //	}
 //	printf("%d", tmp);
