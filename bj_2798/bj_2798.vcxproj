@@ -173,6 +173,7 @@
     <ClCompile Include="bj_1931.cpp" />
     <ClCompile Include="bj_1934.cpp" />
     <ClCompile Include="bj_1676.cpp" />
+    <ClCompile Include="bj_1966.cpp" />
     <ClCompile Include="bj_2004.cpp" />
     <ClCompile Include="bj_20493.cpp" />
     <ClCompile Include="bj_2164.cpp" />
