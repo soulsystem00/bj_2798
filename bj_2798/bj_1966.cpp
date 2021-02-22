@@ -37,19 +37,15 @@
 //		int cntequal = 0;
 //		int index = 0;
 //		bool check = true;
+//		queue<int> printer;
 //		while (!q.empty())
 //		{
 //			int tmp = q.front();
 //			q.pop();
 //			if (tmp > selectnum)
 //			{
-//				cnt++;
+//				printer.push(tmp);
 //			}
-//			else if (tmp == selectnum)
-//			{
-//
-//			}
-//			index++;
 //		}
 //		cout << cnt << endl;
 //	}
@@ -105,7 +101,7 @@ int main()
 			if (tmp.num > selectnum)
 			{
 				cnt++;
-			}
+			}			
 			else
 			{
 				q.push(tmp);
