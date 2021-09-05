@@ -1,112 +1,64 @@
 //#include <iostream>
 //#include <queue>
+//#include <vector>
 //#include <algorithm>
 //using namespace std;
 //
-//bool function(int a, int b)
+//typedef struct Paper
 //{
-//	return b < a;
+//	int priority;
+//	int index;
+//}paper;
+//
+//bool compare(int a, int b)
+//{
+//	return a > b;
 //}
 //
-//struct number
-//{
-//	int num;
-//	int index;
-//};
 //int main()
 //{
-//	int num;
-//	cin >> num;
-//	for (int i = 0; i < num; i++)
+//	cin.tie(NULL);
+//	ios_base::sync_with_stdio(false);
+//	int T;
+//	cin >> T;
+//	for (int t = 0; t < T; t++)
 //	{
-//		int asize, select;
-//		cin >> asize >> select;
-//		queue<int> q;
-//		int selectnum;
-//		for (int i = 0; i < asize; i++)
+//		int n, m;
+//		cin >> n >> m;
+//
+//		vector<int> v;
+//		queue<paper> q;
+//		for (int i = 0; i < n; i++)
 //		{
-//			int tmp;
-//			cin >> tmp;
-//			q.push(tmp);
-//			if (i == select)
-//			{
-//				selectnum = tmp;
-//			}
+//			int p;
+//			cin >> p;
+//			paper P = { p, i };
+//			v.push_back(p);
+//			q.push(P);
 //		}
-//		int cnt = 1;
-//		int cntequal = 0;
-//		int index = 0;
-//		bool check = true;
-//		queue<int> printer;
-//		while (!q.empty())
+//		sort(v.begin(), v.end(), compare);
+//		int cnt(0);
+//
+//		while (true)
 //		{
-//			int tmp = q.front();
+//			while (v.front() != q.front().priority)
+//			{
+//				auto tmp = q.front();
+//				q.pop();
+//				q.push(tmp);
+//			}
+//
+//			v.erase(v.begin());
+//			auto tmp = q.front();
 //			q.pop();
-//			if (tmp > selectnum)
+//			cnt++;
+//
+//			if (tmp.index == m)
 //			{
-//				printer.push(tmp);
+//				cout << cnt << '\n';
+//				break;
 //			}
 //		}
-//		cout << cnt << endl;
 //	}
+//	return 0;
 //}
-
-#include <iostream>
-#include <queue>
-#include <algorithm>
-using namespace std;
-
-bool function(int a, int b)
-{
-	return b < a;
-}
-
-struct number
-{
-	int num;
-	int index;
-};
-int main()
-{
-	int num;
-	cin >> num;
-	for (int i = 0; i < num; i++)
-	{
-		int asize, select;
-		cin >> asize >> select;
-		queue<number> q;
-		int selectnum;
-		for (int i = 0; i < asize; i++)
-		{
-			number tmp2;
-			int tmp;
-			cin >> tmp;
-			tmp2.num = tmp;
-			tmp2.index = i;
-			q.push(tmp2);
-			if (i == select)
-			{
-				selectnum = tmp;
-			}
-		}
-		int cnt = 0;
-		int cntequal = 0;
-		int index = 0;
-		bool check = true;
-		while (!q.empty())
-		{
-			
-			number tmp = q.front();
-			q.pop();
-			if (tmp.num > selectnum)
-			{
-				cnt++;
-			}			
-			else
-			{
-				q.push(tmp);
-			}
-		}
-		cout << cnt << endl;
-	}
-}
